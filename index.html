@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chống thấm</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4./assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="icon" type="image/png" href="./assets/image/logo-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Script for dropdown logic -->
+    <script src="assets/js/index.js"></script>
+    <div class='Desktop_3 wrapGeneralBig' id='menuKOMO_DESKTOP'>
+        <div class='menuLine_1'>
+            <div class='container'>
+                <div class='row rowFix'>
+                    <a class='logoPart figure2' href='/'>
+                        <img alt='logo' src='assets/image/logo-1024x421-1.png'>
+                    </a>
+                    <div class='areaSearch'>
+                        <form action='/search' class='searchBlock search' method='GET'>
+                            <div class='form-group'>
+                                <input class='form-control' name='key' placeholder='Bạn cần tìm gì' type='text'>
+                            </div>
+                            <button style='padding: 0;border: none;'>
+                                <i aria-hidden='true' class='iTagSearch fa fa-search button_search'></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class='areaPhone'>
+                        <a class='contactCallPopUp' contactText='Gọi điện' data-target='#popup_registration_1'
+                            data-toggle='modal' data='phone' dataHref='tel:0355520138' idGoogleGet='btn_phone_id'
+                            title='Liên hệ'>
+                            <div class="areaPhone-item">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="areaPhone-item">
+                                <p class='text text1'>0355520138</p>
+                                <p class='text text2'>Mon - Fri: 8:00 - 17:00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='areaCart'>
+                        <a class='cartBlock_1' href='/cart/' title='giỏ hàng'>
+                            <div class='cartItem'>
+                                <i aria-hidden='true' class='fa fa-cart-plus'></i>
+                                <i class='amountProduct cart-count cart-amount d-none' data-count='0'>0</i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='menuLine_2'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='categoryPart'>
+                        <a class='linkAllPr' href='./cua-hang.html'>
+                            <i class="fa-solid fa-bars-staggered"></i>
+                            Sản phẩm</a>
+                        <div class='subCatePart1'>
+                            <ul>
+                                <li>
+                                    <a class='liLevel1' href='./san-pham-keo-dan-gach.html'>Sản phẩm keo dán gạch</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1' href='./phu-gia-be-tong-va-vua.html'>Phụ gia bê tông và vữa</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1' href='./san-pham-sua-chua-va-vet-nut-be-tong.html'>Sản phẩm sửa chữa,
+                                        vá vết nứt bê tông</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1' href='./chong-tham-tang-ham-va-ho-thang-may.html'>Chống thấm tầng hầm
+                                        và hố thang máy</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1'
+                                        href='./chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi.html'>Sơn Chống Thấm
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='menuPart'>
+                        <div class='menuItem'>
+                            <a class='link1' href='/'>Trang chủ</a>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./gioi-thieu.html'>Giới thiệu</a>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./du-an-tieu-bieu.html'>Dự án tiêu biểu</a>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./tin-tuc.html'>Truyền Thông</a>
+                        </div>
+                        <div class='menuItem dropDown'>
+                            <a class='link1' href='#'>
+                                Chính sách
+                                <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class='blockLevel2'>
+                                <li>
+                                    <a class='link2' href='./chinh-sach-bao-mat.html' title='Chính sách bảo mật'>Chính sách
+                                        bảo mật</a>
+                                </li>
+                                <li>
+                                    <a class='link2' href='./van-chuyen-giao-nhan.html' title='Vận chuyển, giao nhận'>Vận
+                                        chuyển, giao nhận</a>
+                                </li>
+                                <li>
+                                    <a class='link2' href='./thoi-gian-dat-hang.html' title='Thời gian đặt hàng'>Thời gian
+                                        đặt hàng</a>
+                                </li>
+                                <li>
+                                    <a class='link2' href='./chinh-sach-thanh-toan.html' title='Chính sách thanh toán'>Chính
+                                        sách thanh toán</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./lien-he.html'>Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='Desktop_3' id='contactBtnBlock'>
+        <div class='smallBlock messengerBlock'>
+            <a class='imgPart contactCallPopUp' contactText='Chat Facebook' data-target='#popup_registration_1'
+                data-toggle='modal' dataHref='https://m.me/102696995895839' idGoogleGet='btn_messenger_id'
+                rel='nofollow' title='Liên hệ'>
+                <img alt='messenger' class='messFacePartImg' src='../assets/image/messenger_item_2.png'>
+            </a>
+            <p class='textPart'>Chat Face</p>
+        </div>
+        <div class='smallBlock zaloBlock'>
+            <a class='imgPart contactCallPopUp' contactText='Chat Zalo' data-target='#popup_registration_1'
+                data-toggle='modal' dataHref='https://zalo.me/0355520138' idGoogleGet='btn_zalo_id' rel='nofollow'
+                title='Liên hệ'>
+                <img alt='zalo' class='zaloPartImg' src='../assets/image/zalo_item_2.png'>
+            </a>
+            <p class='textPart'>Chat Zalo</p>
+        </div>
+        <div class='smallBlock phoneBlock'>
+            <a class='imgPart'>
+                <img alt='phone' class='phonePartImg' src='../assets/image/phone_item_2.svg'>
+            </a>
+            <p class='textPart'>Phone</p>
+            <div class='textPart_2'>
+                Gọi ngay:
+                <b>0355520138</b>
+            </div>
+        </div>
+        <div class='smallBlock pageUp hidePageUp'>
+            <i aria-hidden='true' class='pageUpImg fa fa-angle-double-up hidePageUp' title='Về đầu trang'></i>
+        </div>
+    </div>
+    <div class='Mobile_3' id='menuKOMO_MOBILE'>
+        <div class='container containerFix'>
+            <div class='row wrapFlex'>
+                <a class='logoPart' href='/'>
+                    <img alt='logo' src='assets/image/logo-1024x421-1.png'>
+                </a>
+                <div class='searchArea'>
+                    <div class='searchItem'>
+                        <i aria-hidden='true' class='item item_1 fa fa-search'></i>
+                        <i aria-hidden='true' class='item item_2 fa fa-times' style='display: none;'></i>
+                    </div>
+                    <form action='/search' class='searchBlock search' method='GET'>
+                        <div class='form-group'>
+                            <input class='form-control' name='key' placeholder='Search' type='text'>
+                        </div>
+                        <button style='padding: 0;border: none;'>
+                            <i aria-hidden='true' class='iTagSearch fa fa-search'></i>
+                        </button>
+                    </form>
+                </div>
+                <div class='barsPart'>
+                    <div class='wrapIconBars'>
+                        <div class='line line_1'></div>
+                        <div class='line line_2'></div>
+                        <div class='line line_3'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='blockCateMobile'>
+            <div class='container'>
+                <div class='wrapCateParts'>
+                    <div class='catePart'>
+                        <a class='link1' href='/'>Trang chủ</a>
+                    </div>
+                    <div class='catePart'>
+                        <a class='link1' href='./gioi-thieu.html'>Giới thiệu</a>
+                    </div>
+                    <div class='catePart dropMore active'>
+                        <a class='link1' href='./cua-hang.html'>Sản phẩm</a>
+                        <div class='wrapITag'>
+                            <i aria-hidden='true' class='fa fa-angle-right faFix'></i>
+                            <i aria-hidden='true' class='fa fa-angle-down faFix'></i>
+                        </div>
+                        <ul class='blockLevel2'>
+                            <li>
+                                <a class='link2' href='./san-pham-keo-dan-gach.html'>Sản phẩm keo dán gạch</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./phu-gia-be-tong-va-vua.html'>Phụ gia bê tông và vữa</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./san-pham-sua-chua-va-vet-nut-be-tong.html'>Sản phẩm sửa chữa, vá vết
+                                    nứt bê tông</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./chong-tham-tang-ham-va-ho-thang-may.html'>Chống thấm tầng hầm và hố
+                                    thang máy</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi.html'>Sơn
+                                    Chống Thấm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='catePart'>
+                        <a class='link1' href='./du-an-tieu-bieu.html'>Dự án tiêu biểu</a>
+                    </div>
+                    <div class='catePart dropMore'>
+                        <a class='link1' href='./tin-tuc.html'>Truyền Thông</a>
+                    </div>
+                    <div class='catePart dropMore'>
+                        <a class='link1' href='#'>Chính sách</a>
+                        <div class='wrapITag'>
+                            <i aria-hidden='true' class='fa fa-angle-right faFix'></i>
+                            <i aria-hidden='true' class='fa fa-angle-down faFix'></i>
+                        </div>
+                        <ul class='blockLevel2'>
+                            <li>
+                                <a class='link2' href='./chinh-sach-bao-mat.html' title='Chính sách bảo mật'>Chính sách bảo
+                                    mật</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./van-chuyen-giao-nhan.html' title='Vận chuyển, giao nhận'>Vận chuyển,
+                                    giao nhận</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./thoi-gian-dat-hang.html' title='Thời gian đặt hàng'>Thời gian đặt
+                                    hàng</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./chinh-sach-thanh-toan.html' title='Chính sách thanh toán'>Chính sách
+                                    thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='catePart'>
+                        <a class='link1' href='./lien-he.html'>Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='Mobile_3' id='menuEndPage'>
+        <div class='wrapWidth'>
+            <div class='row'>
+                <div class='cartPart smallPart'>
+                    <a class='cartBlock_2 aTag' href='/cart/' title='giỏ hàng'>
+                        <div class='cartItem'>
+                            <img alt='cart' class='cartPartImg' src='assets/image/cartItem.svg'>
+                            <i class='amountProduct cart-count cart-amount d-none' data-count='0'>0</i>
+                        </div>
+                    </a>
+                    <p class='textUnderItem'>Giỏ hàng</p>
+                </div>
+                <div class='messFacePart smallPart'>
+                    <a class='contactCallPopUp aTag' contactText='Chat Facebook' data-target='#popup_registration_1'
+                        data-toggle='modal' dataHref='https://m.me/102696995895839' idGoogleGet='btn_messenger_id'
+                        rel='nofollow' title='Liên hệ'>
+                        <img alt='messengerItem' class='messFacePartImg' src='../assets/image/messenger_item.svg'>
+                    </a>
+                    <p class='textUnderItem'>Chat Face</p>
+                </div>
+                <div class='phonePart centerPart'>
+                    <a class='contactCallPopUp' contactText='Gọi điện' data-target='#popup_registration_1'
+                        data-toggle='modal' data='phone' dataHref='tel:0355520138' idGoogleGet='btn_phone_id'
+                        title='Liên hệ'>
+                        <img alt='phoneItem' class='phonePartImg' src='../assets/image/phone_item.svg'>
+                    </a>
+                </div>
+                <div class='zaloPart smallPart'>
+                    <a class='contactCallPopUp aTag' contactText='Chat Zalo' data-target='#popup_registration_1'
+                        data-toggle='modal' dataHref='https://zalo.me/0355520138' idGoogleGet='btn_zalo_id'
+                        rel='nofollow' title='Liên hệ'>
+                        <img alt='Zalo' class='zaloPartImg' src='../assets/image/zalo_item.png'>
+                    </a>
+                    <p class='textUnderItem'>Zalo</p>
+                </div>
+                <div class='youtubePart smallPart'>
+                    <a class='contactCallPopUp aTag' contactText='Tới Youtube' data-target='#popup_registration_1'
+                        data-toggle='modal' dataHref='https://www.youtube.com/channel/UC3yf78cxy0CvOi7--MiHTwA'
+                        idGoogleGet='btn_youtube_id' rel='nofollow' title='Liên hệ'>
+                        <img alt='youtube' class='youtubePartImg' src='../assets/image/youtubeItem.png'>
+                    </a>
+                    <p class='textUnderItem'>Youtube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden='true' class='modal fade popupAskContact' id='popup_registration_1' role='dialog' tabindex='-1'>
+        <div class='modal-dialog modal-dialog-centered' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <p class='modal-title'>KẾT NỐI</p>
+                    <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+                        <span aria-hidden='true'>×</span>
+                    </button>
+                </div>
+                <div class='modal-body'>
+                    Bạn có muốn kết nối với tư vấn viên KOMO?
+                </div>
+                <div class='modal-footer'>
+                    <a class='btnType_2' data-dismiss='modal'>Hủy</a>
+                    <a class='btnType_2 btnContact' href='' rel='nofollow' target='_blank'></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='container-fluid' id='homeSona'>
+        <div class='secBanner'>
+            <a href='/'>
+                        <picture>
+                            <source loading='lazy' media='(min-width:768px)' srcset='./assets/image/banner.webp'>
+                            <img alt='bannerHome' class='imgBanner' loading='lazy' src='./assets/image/banner.webp'>
+                            </source>
+                        </picture>
+                    </a>
+        </div>
+        <div class='secAdvantage'>
+            <div class='container'>
+                <div class='fourAdvanBlock'>
+                    <div class='row'>
+                        <div class='col-lg-3 col-md-6 col-sm-6 col-12 colFix'>
+                            <div class='leftItem figure2'>
+                                <img alt='item' loading='lazy' src='./assets/image/item_1.png'>
+                            </div>
+                            <div class='rightText'>
+                                <p class='text1'>GIAO HÀNG</p>
+                                <p class='text2'>Miễn phí ship với đơn hàng trên 50.000.000đ</p>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-md-6 col-sm-6 col-12 colFix'>
+                            <div class='leftItem figure2'>
+                                <img alt='item' loading='lazy' src='./assets/image/item_2.png'>
+                            </div>
+                            <div class='rightText'>
+                                <p class='text1'>ĐỔI TRẢ HÀNG</p>
+                                <p class='text2'>Cho phép khách hàng được đổi hàng 1 đổi 1 trong vòng 3 ngày</p>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-md-6 col-sm-6 col-12 colFix'>
+                            <div class='leftItem figure2'>
+                                <img alt='item' loading='lazy' src='./assets/image/item_3.png'>
+                            </div>
+                            <div class='rightText'>
+                                <p class='text1'>ĐỘI NGŨ NHÂN VIÊN</p>
+                                <p class='text2'>Chăm sóc khách hàng nhiệt tình trước và sau khi bán</p>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-md-6 col-sm-6 col-12 colFix'>
+                            <div class='leftItem figure2'>
+                                <img alt='item' loading='lazy' src='./assets/image/item_3.png'>
+                            </div>
+                            <div class='rightText'>
+                                <p class='text1'>THANH TOÁN AN TOÀN 100%</p>
+                                <p class='text2'>Thanh toán được đảm bảo an toàn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='section_2'>
+            <div class='container'>
+                <div class='row rowFix'>
+                    <div class='textBlock'>
+                        <p class='text_1'>Sơn chống thấm VITEC – CỐT LÕI CỦA KIỆT TÁC</p>
+                        <p class='text_2'>“Xuyên suốt quá trình sản xuất sản phẩm, các yếu tố về công nghệ, độ bền, đặc
+                            tính và an toàn môi trường luôn được ưu tiên. Sơn chống thấm VITEC được thi công vào lớp
+                            tường bê tông bên trong của tòa nhà trước khi sơn màu nhưng bảo vệ bề mặt bên ngoài cực tốt
+                            và hiệu quả. Tường nhà không còn xuất hiện những tình trạng như các vết nứt, bụi bẩn và ẩm
+                            mốc do thời tiết.”</p>
+                    </div>
+                    <div class='imgBlock'>
+                        <img alt='chongthamvitec' loading='lazy' src='./assets/image/thung-son.png'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='secProduct'>
+            <div class='container'>
+                <div class='titleBlock'>
+                    <a href='/san-pham-keo-dan-gach/'>
+                        <h2 class='text'>
+                            Sản phẩm
+                            <i class='iTag'>keo dán gạch</i>
+                        </h2>
+                    </a>
+                    <div class='underline'></div>
+                </div>
+                <div class='owl-carousel owl-theme owlSubcateBlock1'>
+                    <h3 class='text'>
+                        <a class='aTag active' href='/san-pham-keo-dan-gach/'>Tất cả sản phẩm</a>
+                    </h3>
+                </div>
+                <div class='productBlock1'>
+                    <div class='row'>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-rm05/' title='VITEC RM-05 – chất kết dính xi măng Polyme'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC RM-05 – chất kết dính xi măng Polyme' loading='lazy'
+                                            src='./assets/image/3abhea3ttgq4zpg04yequcqvc4ig_rm-05.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-rm05/' title='VITEC RM-05 – chất kết dính xi măng Polyme'>
+                                        <h4 class='titleProduct'>VITEC RM-05 – chất kết dính xi măng Polyme</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-rm06/' title='VITEC RM-06 – chất kết dính xi măng Polyme'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC RM-06 – chất kết dính xi măng Polyme' loading='lazy'
+                                            src='./assets/image/s9tfhk5xvrrscfzyvkgopx7hlxbl_rm-06.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-rm06/' title='VITEC RM-06 – chất kết dính xi măng Polyme'>
+                                        <h4 class='titleProduct'>VITEC RM-06 – chất kết dính xi măng Polyme</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-rm07/' title='VITEC RM-07 – chất kết dính xi măng Polyme'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC RM-07 – chất kết dính xi măng Polyme' loading='lazy'
+                                            src='./assets/image/srr5pwafckaeo75odio5exmzuqmy_rm-07.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-rm07/' title='VITEC RM-07 – chất kết dính xi măng Polyme'>
+                                        <h4 class='titleProduct'>VITEC RM-07 – chất kết dính xi măng Polyme</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-rm08/' title='VITEC RM-08 – Keo miết mạch mịn'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC RM-08 – Keo miết mạch mịn' loading='lazy'
+                                            src='./assets/image/73s3clzs611j6y2d3lrccv77bng7_26.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-rm08/' title='VITEC RM-08 – Keo miết mạch mịn'>
+                                        <h4 class='titleProduct'>VITEC RM-08 – Keo miết mạch mịn</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='secProduct'>
+            <div class='container'>
+                <div class='titleBlock'>
+                    <a href='/phu-gia-be-tong-va-vua/'>
+                        <h2 class='text'>
+                            Phụ gia
+                            <i class='iTag'>bê tông và vữa</i>
+                        </h2>
+                    </a>
+                    <div class='underline'></div>
+                </div>
+                <div class='owl-carousel owl-theme owlSubcateBlock1'>
+                    <h3 class='text'>
+                        <a class='aTag active' href='/phu-gia-be-tong-va-vua/'>Tất cả sản phẩm</a>
+                    </h3>
+                </div>
+                <div class='productBlock1'>
+                    <div class='row'>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-latex/' title='VITEC LATEX – phụ gia sơn chống thấm'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC LATEX – phụ gia sơn chống thấm' loading='lazy'
+                                            src='./assets/image/t9l7kmhp7wflcb431wanvseylacs_Untitled-design-4-e1640233274756.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-latex/' title='VITEC LATEX – phụ gia sơn chống thấm'>
+                                        <h4 class='titleProduct'>VITEC LATEX – phụ gia sơn chống thấm</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-tg/' title='VITEC TG – Chất tẩy gỉ, bảo quản thép'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC TG – Chất tẩy gỉ, bảo quản thép' loading='lazy'
+                                            src='./assets/image/ene53yn3vdaosyox4taz0c4ep3ot_22.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-tg/' title='VITEC TG – Chất tẩy gỉ, bảo quản thép'>
+                                        <h4 class='titleProduct'>VITEC TG – Chất tẩy gỉ, bảo quản thép</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='secProduct'>
+            <div class='container'>
+                <div class='titleBlock'>
+                    <a href='/san-pham-sua-chua-va-vet-nut-be-tong/'>
+                        <h2 class='text'>
+                            Sản phẩm
+                            <i class='iTag'>sửa chữa, vá vết nứt bê tông</i>
+                        </h2>
+                    </a>
+                    <div class='underline'></div>
+                </div>
+                <div class='owl-carousel owl-theme owlSubcateBlock1'>
+                    <h3 class='text'>
+                        <a class='aTag active' href='/san-pham-sua-chua-va-vet-nut-be-tong/'>Tất cả sản phẩm</a>
+                    </h3>
+                </div>
+                <div class='productBlock1'>
+                    <div class='row'>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-grout-mac-600/'
+                                    title='VITEC GROUT Mác 600 – Vữa tự chảy không co ngót'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC GROUT Mác 600 – Vữa tự chảy không co ngót' loading='lazy'
+                                            src='./assets/image/g1aropl9xiy1ktm9xo35tmqr7lwy_4-1.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-grout-mac-600/'
+                                        title='VITEC GROUT Mác 600 – Vữa tự chảy không co ngót'>
+                                        <h4 class='titleProduct'>VITEC GROUT Mác 600 – Vữa tự chảy không co ngót</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-rm01/' title='VITEC RM01 – Vữa sửa chữa'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC RM01 – Vữa sửa chữa' loading='lazy'
+                                            src='./assets/image/nw93dc45fg2grgnxbx80z21ehiq0_Untitled-design-1-1-e1635240610232.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-rm01/' title='VITEC RM01 – Vữa sửa chữa'>
+                                        <h4 class='titleProduct'>VITEC RM01 – Vữa sửa chữa</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-ea01/' title='VITEC EA01 – Chất kết dính epoxy'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC EA01 – Chất kết dính epoxy' loading='lazy'
+                                            src='./assets/image/w94n9vy3kp8nyb9767tkj0dgp5xl_13.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-ea01/' title='VITEC EA01 – Chất kết dính epoxy'>
+                                        <h4 class='titleProduct'>VITEC EA01 – Chất kết dính epoxy</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-top/' title='VITEC TOP – chất trộn sẵn làm cứng sàn'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC TOP – chất trộn sẵn làm cứng sàn' loading='lazy'
+                                            src='./assets/image/zm5os5fmkkicom2f7snws1ixi1yx_16.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-top/' title='VITEC TOP – chất trộn sẵn làm cứng sàn'>
+                                        <h4 class='titleProduct'>VITEC TOP – chất trộn sẵn làm cứng sàn</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-tsp/' title='VITEC TSP – Sản phẩm cách ẩm, làm phẳng'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC TSP – Sản phẩm cách ẩm, làm phẳng' loading='lazy'
+                                            src='./assets/image/10itquo4dcu0z44r9g3petmw1xqz_17.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-tsp/' title='VITEC TSP – Sản phẩm cách ẩm, làm phẳng'>
+                                        <h4 class='titleProduct'>VITEC TSP – Sản phẩm cách ẩm, làm phẳng</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-pr-01/'
+                                    title='VITEC PR-01 – Sơn lót chống thấm epoxy gốc nước'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC PR-01 – Sơn lót chống thấm epoxy gốc nước' loading='lazy'
+                                            src='./assets/image/hs3s69byt5ksycwkvc6tzumgvjg2_18.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-pr-01/'
+                                        title='VITEC PR-01 – Sơn lót chống thấm epoxy gốc nước'>
+                                        <h4 class='titleProduct'>VITEC PR-01 – Sơn lót chống thấm epoxy gốc nước</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-ep01/' title='VITEC EP-01 – Sơn phủ chống thấm epoxy gốc nước'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC EP-01 – Sơn phủ chống thấm epoxy gốc nước' loading='lazy'
+                                            src='./assets/image/921sktc9kbwgwqo85g6v67090klo_20.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-ep01/'
+                                        title='VITEC EP-01 – Sơn phủ chống thấm epoxy gốc nước'>
+                                        <h4 class='titleProduct'>VITEC EP-01 – Sơn phủ chống thấm epoxy gốc nước</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-ep02/'
+                                    title='VITEC EP-02 – sơn phủ chống thấm epoxy không dung môi'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC EP-02 – sơn phủ chống thấm epoxy không dung môi' loading='lazy'
+                                            src='./assets/image/xoy9vfur0utzj4hhid6cwxwwuqm3_21.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-ep02/'
+                                        title='VITEC EP-02 – sơn phủ chống thấm epoxy không dung môi'>
+                                        <h4 class='titleProduct'>VITEC EP-02 – sơn phủ chống thấm epoxy không dung môi
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='secProduct'>
+            <div class='container'>
+                <div class='titleBlock'>
+                    <a href='/chong-tham-tang-ham-va-ho-thang-may/'>
+                        <h2 class='text'>
+                            Chống thấm
+                            <i class='iTag'>tầng hầm và hố thang máy</i>
+                        </h2>
+                    </a>
+                    <div class='underline'></div>
+                </div>
+                <div class='owl-carousel owl-theme owlSubcateBlock1'>
+                    <h3 class='text'>
+                        <a class='aTag active' href='/chong-tham-tang-ham-va-ho-thang-may/'>Tất cả sản phẩm</a>
+                    </h3>
+                </div>
+                <div class='productBlock1'>
+                    <div class='row'>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-water-plug/' title='VITEC WATER PLUG – vữa không chứa clorua'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC WATER PLUG – vữa không chứa clorua' loading='lazy'
+                                            src='./assets/image/2aiqe1kwqypayisqrbxcy18a5luq_14.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-water-plug/'
+                                        title='VITEC WATER PLUG – vữa không chứa clorua'>
+                                        <h4 class='titleProduct'>VITEC WATER PLUG – vữa không chứa clorua</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-seal/' title='VITEC SEAL – Tinh thể thẩm thấu'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC SEAL – Tinh thể thẩm thấu' loading='lazy'
+                                            src='./assets/image/wgafow8lpyk91wu7iqen7lagrahd_15.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-seal/' title='VITEC SEAL – Tinh thể thẩm thấu'>
+                                        <h4 class='titleProduct'>VITEC SEAL – Tinh thể thẩm thấu</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='secProduct'>
+            <div class='container'>
+                <div class='titleBlock'>
+                    <a href='/chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi/'>
+                        <h2 class='text'>
+                            Sơn Chống
+                            <i class='iTag'>Thấm</i>
+                        </h2>
+                    </a>
+                    <div class='underline'></div>
+                </div>
+                <div class='owl-carousel owl-theme owlSubcateBlock1'>
+                    <h3 class='text'>
+                        <a class='aTag active' href='/chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi/'>Tất cả sản
+                            phẩm</a>
+                    </h3>
+                </div>
+                <div class='productBlock1'>
+                    <div class='row'>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-toppaint-830/'
+                                    title='VITEC TOPPAINT-830 – sơn phủ bền thời tiết'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC TOPPAINT-830 – sơn phủ bền thời tiết' loading='lazy'
+                                            src='./assets/image/l5rzkhobxomqsch52hp7bg0yy1l1_Untitled-design-3-2-e1641185787417.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-toppaint-830/'
+                                        title='VITEC TOPPAINT-830 – sơn phủ bền thời tiết'>
+                                        <h4 class='titleProduct'>VITEC TOPPAINT-830 – sơn phủ bền thời tiết</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-xp-02-hs/'
+                                    title='VITEC XP02 HS – Sơn phủ chống thấm gốc xi măng Polyme 2 TP'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC XP02 HS – Sơn phủ chống thấm gốc xi măng Polyme 2 TP'
+                                            loading='lazy'
+                                            src='./assets/image/6y979i7ekw9x8itpwb3djv0xp777_z4201535386615_6affd30e9d8679540a1dc3fcec0e6248.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-xp-02-hs/'
+                                        title='VITEC XP02 HS – Sơn phủ chống thấm gốc xi măng Polyme 2 TP'>
+                                        <h4 class='titleProduct'>VITEC XP02 HS – Sơn phủ chống thấm gốc xi măng Polyme 2
+                                            TP</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-membrane/' title='VITEC MEMBRANE – Màng cao su bitum-polyme'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC MEMBRANE – Màng cao su bitum-polyme' loading='lazy'
+                                            src='./assets/image/pwrhmkyh35p6azbqxqllryn76rmr_vitec-membrane.webp'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-membrane/'
+                                        title='VITEC MEMBRANE – Màng cao su bitum-polyme'>
+                                        <h4 class='titleProduct'>VITEC MEMBRANE – Màng cao su bitum-polyme</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-pu-270/' title='VITEC PU-270 – gốc dung môi Polyurethane 1 TP'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC PU-270 – gốc dung môi Polyurethane 1 TP' loading='lazy'
+                                            src='./assets/image/cosaofkkjz24g127x3wc8wl9ymqc_20211019_020929_0000.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-pu-270/'
+                                        title='VITEC PU-270 – gốc dung môi Polyurethane 1 TP'>
+                                        <h4 class='titleProduct'>VITEC PU-270 – gốc dung môi Polyurethane 1 TP</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <p class='currentPrice'>412.500đ</p>
+                                    </div>
+                                    <div class='cartPart'>
+                                        <a class='aTag2' href='/cart/' style='display: none;'>
+                                            <div class='itemCart itemCart2' title='Đi tới giỏ hàng'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-pr03/'
+                                    title='VITEC PR-03 – sơn lót chống thấm gốc Polyurethane 1 TP'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC PR-03 – sơn lót chống thấm gốc Polyurethane 1 TP' loading='lazy'
+                                            src='./assets/image/6421i56xiks3r7e7hf78iq4jf932_pr-03-e1639984570459.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-pr03/'
+                                        title='VITEC PR-03 – sơn lót chống thấm gốc Polyurethane 1 TP'>
+                                        <h4 class='titleProduct'>VITEC PR-03 – sơn lót chống thấm gốc Polyurethane 1 TP
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-pu-268/' title='VITEC PU-268 – gốc Polyurethane 1 TP'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC PU-268 – gốc Polyurethane 1 TP' loading='lazy'
+                                            src='./assets/image/yfia7yvsrokfqpsyxj0e40z8p1jt_Untitled-design-e1664437601966.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-pu-268/' title='VITEC PU-268 – gốc Polyurethane 1 TP'>
+                                        <h4 class='titleProduct'>VITEC PU-268 – gốc Polyurethane 1 TP</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <p class='currentPrice'>1.125.000đ</p>
+                                    </div>
+                                    <div class='cartPart'>
+                                        <a class='aTag2' href='/cart/' style='display: none;'>
+                                            <div class='itemCart itemCart2' title='Đi tới giỏ hàng'></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-puseal/'
+                                    title='VITEC PUSeal – Keo xảm khe chống thấm 1 TP Polyurethane'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC PUSeal – Keo xảm khe chống thấm 1 TP Polyurethane'
+                                            loading='lazy'
+                                            src='./assets/image/9go64h66pw71ulomebr3hw6anmdz_11-e1639990279177.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-puseal/'
+                                        title='VITEC PUSeal – Keo xảm khe chống thấm 1 TP Polyurethane'>
+                                        <h4 class='titleProduct'>VITEC PUSeal – Keo xảm khe chống thấm 1 TP Polyurethane
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-3 col-6'>
+                            <div class='detailProductBlock1'>
+                                <a href='/san-pham/vitec-xp02/' title='VITEC XP02 – Sơn phủ gốc xi măng-Polyme'>
+                                    <div class='imgProduct figure2'>
+                                        <img alt='VITEC XP02 – Sơn phủ gốc xi măng-Polyme' loading='lazy'
+                                            src='./assets/image/1gxqoe6vcnr992v0d2edy9i93wmt_12.png'>
+                                    </div>
+                                </a>
+                                <div class='textPart'>
+                                    <a href='/san-pham/vitec-xp02/' title='VITEC XP02 – Sơn phủ gốc xi măng-Polyme'>
+                                        <h4 class='titleProduct'>VITEC XP02 – Sơn phủ gốc xi măng-Polyme</h4>
+                                    </a>
+                                </div>
+                                <div class='underline'></div>
+                                <div class='priceCart'>
+                                    <div class='pricePart'>
+                                        <a href='tel:0355520138'>
+                                            <p class='currentPrice'>Liên hệ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='specialBlock_1'>
+            <div class='container'>
+                <div class='titleBlock_1'>
+                    <p class='titleText_1'>VIDEO FEEDBACK CỦA KHÁCH HÀNG</p>
+                    <div class='underTitle'></div>
+                </div>
+                <div class='specialBlock_2'>
+                    <div class='wrapFlex'>
+                        <div class='bigVideoBlock'>
+                            <div class='specialVideoBlock_1'
+                                datasrcvideo='https://www.youtube.com/embed/IkNscV1dZSk?autoplay=1'>
+                                <div class='wrapVideo'>
+                                    <img alt='cfa' class='imgVideo' loading='lazy'
+                                        src='https://i1.ytimg.com/vi/IkNscV1dZSk/sddefault.jpg'>
+                                </div>
+                                <div class='wrapIconPlay'>
+                                    <i aria-hidden='true' class='fa fa-play'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='listSmallVideoBlock'>
+                            <div class='specialVideoBlock_1'
+                                datasrcvideo='https://www.youtube.com/embed/KroUcdJ31JU?autoplay=1'>
+                                <div class='wrapVideo'>
+                                    <img alt='cfa' class='imgVideo' loading='lazy'
+                                        src='https://i1.ytimg.com/vi/KroUcdJ31JU/sddefault.jpg'>
+                                </div>
+                                <div class='wrapIconPlay'>
+                                    <i aria-hidden='true' class='fa fa-play'></i>
+                                </div>
+                            </div>
+                            <div class='specialVideoBlock_1'
+                                datasrcvideo='https://www.youtube.com/embed/EfvPR_BTumY?autoplay=1'>
+                                <div class='wrapVideo'>
+                                    <img alt='cfa' class='imgVideo' loading='lazy'
+                                        src='https://i1.ytimg.com/vi/EfvPR_BTumY/sddefault.jpg'>
+                                </div>
+                                <div class='wrapIconPlay'>
+                                    <i aria-hidden='true' class='fa fa-play'></i>
+                                </div>
+                            </div>
+                            <div class='specialVideoBlock_1'
+                                datasrcvideo='https://www.youtube.com/embed/Twcqf5wnQlE?autoplay=1'>
+                                <div class='wrapVideo'>
+                                    <img alt='cfa' class='imgVideo' loading='lazy'
+                                        src='https://i1.ytimg.com/vi/Twcqf5wnQlE/sddefault.jpg'>
+                                </div>
+                                <div class='wrapIconPlay'>
+                                    <i aria-hidden='true' class='fa fa-play'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='secNews'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='leftNews'>
+                        <div class='titleBlock'>
+                            <p class='text'>
+                                TIN TỨC
+                                <i class='iTag'>NỔI BẬT</i>
+                            </p>
+                        </div>
+                        <div class='wrapTwoPart'>
+                            <div class='bigNewsPart'>
+                                <div class='detailNewsBlock1'>
+                                    <a href='/chong-tham-be-boi-bang-vitec-pu-270/'>
+                                        <div class='imgPart figure2'>
+                                            <img alt='Chống Thấm Bể Bơi Bằng Vitec PU 270: Giải Pháp Bền Vững Và Hiệu Quả Cho Công Trình '
+                                                loading='lazy'
+                                                src='./assets/image/7pzq7eh7elsw1c3xs3snn7l05h2n_chong-tham-be-boi-bang-vitec-pu-270-(1).webp'>
+                                        </div>
+                                    </a>
+                                    <div class='textPart'>
+                                        <p class='text1'>
+                                            <i aria-hidden='true' class='fa fa-clock-o iTagFa'></i>
+                                            <i class='iTagtext'> 09 Tháng 08, 2025</i>
+                                            <i aria-hidden='true' class='fa fa-newspaper-o iTagFa'></i>
+                                            <i class='iTagtext'>
+                                                <a href='/tin-tuc/'>Tin tức</a>
+                                            </i>
+                                        </p>
+                                        <a href='/chong-tham-be-boi-bang-vitec-pu-270/'
+                                            title='Chống Thấm Bể Bơi Bằng Vitec PU 270: Giải Pháp Bền Vững Và Hiệu Quả Cho Công Trình '>
+                                            <p class='titleNews'>Chống Thấm Bể Bơi Bằng Vitec PU 270: Giải Pháp Bền Vững
+                                                Và Hiệu Quả Cho Công Trình </p>
+                                        </a>
+                                        <p class='descriptionText'>Chống thấm bể bơi bằng Vitec PU 270 – giải pháp bền
+                                            vững, hiệu quả cao. Hướng dẫn thi công chi tiết, ngăn ngừa rò rỉ, tăng tuổi
+                                            thọ công trình tối ưu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='smallNewsPart'>
+                                <div class='detailNewsBlock2'>
+                                    <div class='imgPart figure2'>
+                                        <a href='/chong-tham-nha-ve-sinh-bang-vitec-pu-270/'>
+                                            <img alt='Chống Thấm Nhà Vệ Sinh Bằng Vitec PU 270: Giải Pháp Toàn Diện &amp; Hướng Dẫn Thi Công'
+                                                loading='lazy'
+                                                src='./assets/image/zkvfx7u167hj9r4qwejq4hjtqmo6_chong-tham-nha-ve-sinh-bang-vitec-pu-270-(7).webp'>
+                                        </a>
+                                    </div>
+                                    <div class='textPart'>
+                                        <a href='/chong-tham-nha-ve-sinh-bang-vitec-pu-270/'
+                                            title='Chống Thấm Nhà Vệ Sinh Bằng Vitec PU 270: Giải Pháp Toàn Diện &amp; Hướng Dẫn Thi Công'>
+                                            <p class='titleNews'>Chống Thấm Nhà Vệ Sinh Bằng Vitec PU 270: Giải Pháp
+                                                Toàn Diện & Hướng Dẫn Thi Công</p>
+                                        </a>
+                                        <p class='text1'> 09 Tháng 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class='detailNewsBlock2'>
+                                    <div class='imgPart figure2'>
+                                        <a href='/chong-tham-san-thuong-bang-vitec-pu-270/'>
+                                            <img alt='Chống Thấm Sân Thượng Bằng Vitec PU 270: Hướng Dẫn Chi Tiết &amp; Giải Pháp Hiệu Quả'
+                                                loading='lazy'
+                                                src='./assets/image/8hg8jbwanp59luxt6r4wr14yx02a_chong-tham-san-thuong-bang-vitec-pu-270-(9).webp'>
+                                        </a>
+                                    </div>
+                                    <div class='textPart'>
+                                        <a href='/chong-tham-san-thuong-bang-vitec-pu-270/'
+                                            title='Chống Thấm Sân Thượng Bằng Vitec PU 270: Hướng Dẫn Chi Tiết &amp; Giải Pháp Hiệu Quả'>
+                                            <p class='titleNews'>Chống Thấm Sân Thượng Bằng Vitec PU 270: Hướng Dẫn Chi
+                                                Tiết & Giải Pháp Hiệu Quả</p>
+                                        </a>
+                                        <p class='text1'> 09 Tháng 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class='detailNewsBlock2'>
+                                    <div class='imgPart figure2'>
+                                        <a href='/chong-tham-san-mai-bang-vitec-pu-270/'>
+                                            <img alt='Chống Thấm Sàn Mái Bằng Vitec PU 270: Hướng Dẫn Thi Công Chuyên Nghiệp'
+                                                loading='lazy'
+                                                src='./assets/image/vib835kdsz41kk768gxyngevhmnk_chong-tham-san-mai-bang-vitec-pu-270-(10).webp'>
+                                        </a>
+                                    </div>
+                                    <div class='textPart'>
+                                        <a href='/chong-tham-san-mai-bang-vitec-pu-270/'
+                                            title='Chống Thấm Sàn Mái Bằng Vitec PU 270: Hướng Dẫn Thi Công Chuyên Nghiệp'>
+                                            <p class='titleNews'>Chống Thấm Sàn Mái Bằng Vitec PU 270: Hướng Dẫn Thi
+                                                Công Chuyên Nghiệp</p>
+                                        </a>
+                                        <p class='text1'> 09 Tháng 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class='detailNewsBlock2'>
+                                    <div class='imgPart figure2'>
+                                        <a href='/thi-cong-chong-tham-vitec-pu-270/'>
+                                            <img alt='Hướng Dẫn Thi Công Chống Thấm Vitec PU 270 Chuyên Nghiệp Từ A-Z '
+                                                loading='lazy'
+                                                src='./assets/image/cdcy9uz2pgn7rw8f4ssne8717tda_thi-cong-chong-tham-vitec-pu-270-(6).webp'>
+                                        </a>
+                                    </div>
+                                    <div class='textPart'>
+                                        <a href='/thi-cong-chong-tham-vitec-pu-270/'
+                                            title='Hướng Dẫn Thi Công Chống Thấm Vitec PU 270 Chuyên Nghiệp Từ A-Z '>
+                                            <p class='titleNews'>Hướng Dẫn Thi Công Chống Thấm Vitec PU 270 Chuyên
+                                                Nghiệp Từ A-Z </p>
+                                        </a>
+                                        <p class='text1'> 09 Tháng 08, 2025</p>
+                                    </div>
+                                </div>
+                                <div class='btnViewAll'>
+                                    <a class='btnType1' href='/tin-tuc/'>XEM TẤT CẢ &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='rightVideo'>
+                        <p class='title'>VIDEO CLIP</p>
+                        <div class='owl-carousel owl-theme owlSlideVideo'>
+                            <div class='videoBlock'>
+                                <div class='specialVideoBlock_1'
+                                    datasrcvideo='https://www.youtube.com/embed/IkNscV1dZSk?autoplay=1'>
+                                    <div class='wrapVideo'>
+                                        <img alt='cfa' class='imgVideo' loading='lazy'
+                                            src='https://i1.ytimg.com/vi/IkNscV1dZSk/sddefault.jpg'>
+                                    </div>
+                                    <div class='wrapIconPlay'>
+                                        <i aria-hidden='true' class='fa fa-play'></i>
+                                    </div>
+                                </div>
+                                <div class='textPart'>
+                                    <a title='CHỐNG THẤM BỂ BƠI VỚI VITEC XP02-HQ - CHỐNG THẤM TUYỆT HẢO'>
+                                        <p class='titleVideo'>CHỐNG THẤM BỂ BƠI VỚI VITEC XP02-HQ - CHỐNG THẤM TUYỆT HẢO
+                                        </p>
+                                    </a>
+                                    <p class='text1'>33 lượt xem : 29 thg 11, 2021</p>
+                                </div>
+                            </div>
+                            <div class='videoBlock'>
+                                <div class='specialVideoBlock_1'
+                                    datasrcvideo='https://www.youtube.com/embed/dIUNnp_YdKc?autoplay=1'>
+                                    <div class='wrapVideo'>
+                                        <img alt='cfa' class='imgVideo' loading='lazy'
+                                            src='https://i1.ytimg.com/vi/dIUNnp_YdKc/sddefault.jpg'>
+                                    </div>
+                                    <div class='wrapIconPlay'>
+                                        <i aria-hidden='true' class='fa fa-play'></i>
+                                    </div>
+                                </div>
+                                <div class='textPart'>
+                                    <a title='CHỐNG THẤM NHÀ VỆ SINH CÙNG VITEC XP02 -HQ || HIỆU QUẢ KHỎI BÀN'>
+                                        <p class='titleVideo'>CHỐNG THẤM NHÀ VỆ SINH CÙNG VITEC XP02 -HQ || HIỆU QUẢ
+                                            KHỎI BÀN</p>
+                                    </a>
+                                    <p class='text1'>75 lượt xem : 1 thg 12, 2021</p>
+                                </div>
+                            </div>
+                            <div class='videoBlock'>
+                                <div class='specialVideoBlock_1'
+                                    datasrcvideo='https://www.youtube.com/embed/KcDLTP9QKrE?autoplay=1'>
+                                    <div class='wrapVideo'>
+                                        <img alt='cfa' class='imgVideo' loading='lazy'
+                                            src='https://i1.ytimg.com/vi/KcDLTP9QKrE/sddefault.jpg'>
+                                    </div>
+                                    <div class='wrapIconPlay'>
+                                        <i aria-hidden='true' class='fa fa-play'></i>
+                                    </div>
+                                </div>
+                                <div class='textPart'>
+                                    <a title='CẢI TẠO TƯỜNG NGOÀI - LỘT XÁC HOÀN TOÀN VỚI VITEC PU 268'>
+                                        <p class='titleVideo'>CẢI TẠO TƯỜNG NGOÀI - LỘT XÁC HOÀN TOÀN VỚI VITEC PU 268
+                                        </p>
+                                    </a>
+                                    <p class='text1'>26 lượt xem : 2 thg 12, 2021</p>
+                                </div>
+                            </div>
+                            <div class='videoBlock'>
+                                <div class='specialVideoBlock_1'
+                                    datasrcvideo='https://www.youtube.com/embed/plTGRYAQ2js?autoplay=1'>
+                                    <div class='wrapVideo'>
+                                        <img alt='cfa' class='imgVideo' loading='lazy'
+                                            src='https://i1.ytimg.com/vi/plTGRYAQ2js/sddefault.jpg'>
+                                    </div>
+                                    <div class='wrapIconPlay'>
+                                        <i aria-hidden='true' class='fa fa-play'></i>
+                                    </div>
+                                </div>
+                                <div class='textPart'>
+                                    <a title='CẢI TẠO TƯỜNG NGOÀI - LỘT XÁC HOÀN TOÀN VỚI VITEC PU 268'>
+                                        <p class='titleVideo'>CẢI TẠO TƯỜNG NGOÀI - LỘT XÁC HOÀN TOÀN VỚI VITEC PU 268
+                                        </p>
+                                    </a>
+                                    <p class='text1'>26 lượt xem : 2 thg 12, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='fourBoxAdvantage'>
+            <div class='bgCoverOver'></div>
+            <div class='container'>
+                <div class='row rowFix'>
+                    <div class='wrapBox figure2'>
+                        <div class='itemPart'>
+                            <img alt='item' loading='lazy' src='./assets/image/item_4.svg'>
+                        </div>
+                        <p class='text'>DỊCH VỤ CHẤT LƯỢNG</p>
+                    </div>
+                    <div class='wrapBox figure2'>
+                        <div class='itemPart'>
+                            <img alt='item' loading='lazy' src='./assets/image/item_5.svg'>
+                        </div>
+                        <p class='text'>PHỤC VỤ TẬN TÂM</p>
+                    </div>
+                    <div class='wrapBox figure2'>
+                        <div class='itemPart'>
+                            <img alt='item' loading='lazy' src='./assets/image/item_6.svg'>
+                        </div>
+                        <p class='text'>TƯ VẤN CHUYÊN NGHIỆP</p>
+                    </div>
+                    <div class='wrapBox figure2'>
+                        <div class='itemPart'>
+                            <img alt='item' loading='lazy' src='./assets/image/item_7.svg'>
+                        </div>
+                        <p class='text'>ĐỊA CHỈ TIN CẬY</p>
+                    </div>
+                </div>
+                <div class='formRegistration'>
+                    <p class='text'>ĐĂNG KÝ YÊU CẦU GỌI LẠI</p>
+                    <form class='dang-ky contact-form' id='configform1' target='/thank-you/'>
+                        <input type="hidden" name="authenticity_token" id="authenticity_token"
+                            value="fk-_9nBdvIzMSZZtT9I5pzqAZKalZgTJ-kAB9PvRCeNpdCStvKgacwf1It5S3kNfdIu8BjtO9ZMfS4AUIbegVQ"
+                            autocomplete="off" />
+                        <input type="hidden" name="form" id="form" value="dang-ky" autocomplete="off" />
+                        <div class='row wrapForm'>
+                            <div class='input'>
+                                <input class='w-100 rouned px-2' name='name' placeholder='Họ và tên' type='text'>
+                            </div>
+                            <div class='input'>
+                                <input class='w-100 rouned px-2' name='phone' placeholder='Điện thoại' type='number'>
+                            </div>
+                            <div>
+                                <button class='btnType1 figure2 w-100' style='border: none;'>ĐĂNG KÝ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class='blockSlogan2'>
+            <div class='container'>
+                <p class='text'>
+                    "Komo là đơn vị phân phối độc quyền các dòng sơn chống thấm chất lượng cao của VITEC"
+                </p>
+            </div>
+        </div>
+        <div class='galleryBlock'>
+            <div class='owl-carousel owl-theme owlGallery'>
+                <div class='imgPart figure2'>
+                    <img alt='gallery' loading='lazy' src='./assets/image/2.webp'>
+                </div>
+                <div class='imgPart figure2'>
+                    <img alt='gallery' loading='lazy' src='./assets/image/4.webp'>
+                </div>
+                <div class='imgPart figure2'>
+                    <img alt='gallery' loading='lazy' src='./assets/image/ho-pit-thang-may-dien.webp'>
+                </div>
+            </div>
+            <div class='textPart'>
+                <p class='text1'>ỨNG DỤNG CHO CHỐNG THẤM, SỬA CHỮA, PHỤ GIA BÊ TÔNG</p>
+                <p class='text2'>Cung cấp hướng dẫn sử dụng cho quý khách hàng với từng sản phẩm và từng hạng mục thi
+                    công</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class='container-fluid' id='footerSona'>
+        <div class='footerLine4Col'>
+            <div class='bgCoverOver'></div>
+            <div class='container'>
+                <div class='logoBlock'>
+                    <img alt='logo' src='assets/image/logo-1024x421-1.png'>
+                </div>
+                <div class='mainBlock row'>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>THÔNG TIN LIÊN HỆ</p>
+                        <p class='text1'>Công ty TNHH Thương Mại Colorado</p>
+                        <p class='text2'>
+                            <i class='iTag'>Địa chỉ:</i>
+                            Cụm 3, xã Hiệp Thuận, huyện Phúc Thọ, TP. Hà Nội, Việt Nam
+                        </p>
+                        <p class='text2'>
+                            <i class='iTag'>Kho:</i>
+                            CCN thị trấn Phùng, Huyện Đan Phượng, TP. Hà Nội, Việt Nam.
+                        </p>
+                        <!-- %p.text2 -->
+                        <!-- %i.iTag Điện thoại: -->
+                        <!-- 024.629 09968 - 024.668 02750 -->
+                        <p class='text2'>
+                            <i class='iTag'>Hotline:</i>
+                            <a class='contactCallPopUp' contactText='Gọi điện' data-target='#popup_registration_1'
+                                data-toggle='modal' data='phone' dataHref='tel:0355520138' idGoogleGet='btn_phone_id'
+                                title='Liên hệ'>0355520138</a>
+                        </p>
+                        <p class='text2'>
+                            <i class='iTag'>Email:</i>
+                            <a href='mailto:coloradochemical2019@gmail.com'>coloradochemical2019@gmail.com</a>
+                        </p>
+                        <div class='shareSocialPart'>
+                            <div class='shareSocial1'>
+                                <ul>
+                                    <li>
+                                        <a href='https://www.facebook.com/phanphoisonchongthamvitec/' rel='nofollow'
+                                            target='_blank' title='page'>
+                                            <img alt='itemFacebook' src='assets/image/itemFacebook2.svg'>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='' rel='nofollow' target='_blank' title='tiktok'>
+                                            <img alt='tiktok' src='assets/image/tiktok_2.png'>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='' rel='nofollow' target='_blank' title='instagram'>
+                                            <img alt='instagram' src='assets/image/instagramItem2.svg'>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='https://www.youtube.com/channel/UC3yf78cxy0CvOi7--MiHTwA'
+                                            rel='nofollow' target='_blank' title='youtube'>
+                                            <img alt='youtube' src='assets/image/youtube_2.svg'>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>DANH MỤC SẢN PHẨM</p>
+                        <ul class='ulTag1'>
+                            <li>
+                                <a href='/san-pham-keo-dan-gach/'>Sản phẩm keo dán gạch</a>
+                            </li>
+                            <li>
+                                <a href='/phu-gia-be-tong-va-vua/'>Phụ gia bê tông và vữa</a>
+                            </li>
+                            <li>
+                                <a href='/san-pham-sua-chua-va-vet-nut-be-tong/'>Sản phẩm sửa chữa, vá vết nứt bê
+                                    tông</a>
+                            </li>
+                            <li>
+                                <a href='/chong-tham-tang-ham-va-ho-thang-may/'>Chống thấm tầng hầm và hố thang máy</a>
+                            </li>
+                            <li>
+                                <a href='/chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi/'>Sơn chống thấm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>CHÍNH SÁCH</p>
+                        <ul class='ulTag1'>
+                            <li>
+                                <a href='/chinh-sach-bao-mat/' title='Chính sách bảo mật'>Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href='/van-chuyen-giao-nhan/' title='Vận chuyển, giao nhận'>Vận chuyển, giao nhận</a>
+                            </li>
+                            <li>
+                                <a href='/thoi-gian-dat-hang/' title='Thời gian đặt hàng'>Thời gian đặt hàng</a>
+                            </li>
+                            <li>
+                                <a href='/chinh-sach-thanh-toan/' title='Chính sách thanh toán'>Chính sách thanh
+                                    toán</a>
+                            </li>
+                            <li>
+                                <a href='/lien-he/'>Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>KẾT NỐI VỚI COLORADO</p>
+                        <div class='fanpageArea'>
+                            <a href='https://www.facebook.com/phanphoisonchongthamvitec/' rel='nofollow' target='_blank'
+                                title='page'>
+                                <img alt='fanpage' src='assets/image/komo.png'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footerLineEnd'>
+            <div class='container'>
+                <div class='pTagEnd'>
+                    © 2024 chongthamvitec.vn. All Rights Reserved. Design Web and Seo by
+                    <a class='aTagLink' href='https://fagoagency.vn/' rel='nofollow' target='_blank'>FAGO AGENCY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

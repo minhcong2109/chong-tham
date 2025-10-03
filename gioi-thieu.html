@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <script src="assets/js/index.js"></script>
+    <div class='Desktop_3 wrapGeneralBig' id='menuKOMO_DESKTOP'>
+        <div class='menuLine_1'>
+            <div class='container'>
+                <div class='row rowFix'>
+                    <a class='logoPart figure2' href='/'>
+                        <img alt='logo' src='assets/image/logo-1024x421-1.png'>
+                    </a>
+                    <div class='areaSearch'>
+                        <form action='/search' class='searchBlock search' method='GET'>
+                            <div class='form-group'>
+                                <input class='form-control' name='key' placeholder='Bạn cần tìm gì' type='text'>
+                            </div>
+                            <button style='padding: 0;border: none;'>
+                                <i aria-hidden='true' class='iTagSearch fa fa-search button_search'></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class='areaPhone'>
+                        <a class='contactCallPopUp' contactText='Gọi điện' data-target='#popup_registration_1'
+                            data-toggle='modal' data='phone' dataHref='tel:0355520138' idGoogleGet='btn_phone_id'
+                            title='Liên hệ'>
+                            <div class="areaPhone-item">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="areaPhone-item">
+                                <p class='text text1'>0355520138</p>
+                                <p class='text text2'>Mon - Fri: 8:00 - 17:00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='areaCart'>
+                        <a class='cartBlock_1' href='/cart/' title='giỏ hàng'>
+                            <div class='cartItem'>
+                                <i aria-hidden='true' class='fa fa-cart-plus'></i>
+                                <i class='amountProduct cart-count cart-amount d-none' data-count='0'>0</i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='menuLine_2'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='categoryPart'>
+                        <a class='linkAllPr' href='./cua-hang.html'>
+                            <i class="fa-solid fa-bars-staggered"></i>
+                            Sản phẩm</a>
+                        <div class='subCatePart1'>
+                            <ul>
+                                <li>
+                                    <a class='liLevel1' href='./san-pham-keo-dan-gach.html'>Sản phẩm keo dán gạch</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1' href='./phu-gia-be-tong-va-vua.html'>Phụ gia bê tông và vữa</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1' href='./san-pham-sua-chua-va-vet-nut-be-tong.html'>Sản phẩm sửa chữa,
+                                        vá vết nứt bê tông</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1' href='./chong-tham-tang-ham-va-ho-thang-may.html'>Chống thấm tầng hầm
+                                        và hố thang máy</a>
+                                </li>
+                                <li>
+                                    <a class='liLevel1'
+                                        href='./chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi.html'>Sơn Chống Thấm
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='menuPart'>
+                        <div class='menuItem'>
+                            <a class='link1' href='/'>Trang chủ</a>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./gioi-thieu.html'>Giới thiệu</a>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./du-an-tieu-bieu.html'>Dự án tiêu biểu</a>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./tin-tuc.html'>Truyền Thông</a>
+                        </div>
+                        <div class='menuItem dropDown'>
+                            <a class='link1' href='#'>
+                                Chính sách
+                                <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class='blockLevel2'>
+                                <li>
+                                    <a class='link2' href='./chinh-sach-bao-mat.html' title='Chính sách bảo mật'>Chính sách
+                                        bảo mật</a>
+                                </li>
+                                <li>
+                                    <a class='link2' href='./van-chuyen-giao-nhan.html' title='Vận chuyển, giao nhận'>Vận
+                                        chuyển, giao nhận</a>
+                                </li>
+                                <li>
+                                    <a class='link2' href='./thoi-gian-dat-hang.html' title='Thời gian đặt hàng'>Thời gian
+                                        đặt hàng</a>
+                                </li>
+                                <li>
+                                    <a class='link2' href='./chinh-sach-thanh-toan.html' title='Chính sách thanh toán'>Chính
+                                        sách thanh toán</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='menuItem'>
+                            <a class='link1' href='./lien-he.html'>Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='Desktop_3' id='contactBtnBlock'>
+        <div class='smallBlock messengerBlock'>
+            <a class='imgPart contactCallPopUp' contactText='Chat Facebook' data-target='#popup_registration_1'
+                data-toggle='modal' dataHref='https://m.me/102696995895839' idGoogleGet='btn_messenger_id'
+                rel='nofollow' title='Liên hệ'>
+                <img alt='messenger' class='messFacePartImg' src='./assets/image/messenger_item_2.png'>
+            </a>
+            <p class='textPart'>Chat Face</p>
+        </div>
+        <div class='smallBlock zaloBlock'>
+            <a class='imgPart contactCallPopUp' contactText='Chat Zalo' data-target='#popup_registration_1'
+                data-toggle='modal' dataHref='https://zalo.me/0355520138' idGoogleGet='btn_zalo_id' rel='nofollow'
+                title='Liên hệ'>
+                <img alt='zalo' class='zaloPartImg' src='./assets/image/zalo_item_2.png'>
+            </a>
+            <p class='textPart'>Chat Zalo</p>
+        </div>
+        <div class='smallBlock phoneBlock'>
+            <a class='imgPart'>
+                <img alt='phone' class='phonePartImg' src='./assets/image/phone_item_2.svg'>
+            </a>
+            <p class='textPart'>Phone</p>
+            <div class='textPart_2'>
+                Gọi ngay:
+                <b>0355520138</b>
+            </div>
+        </div>
+        <div class='smallBlock pageUp hidePageUp'>
+            <i aria-hidden='true' class='pageUpImg fa fa-angle-double-up hidePageUp' title='Về đầu trang'></i>
+        </div>
+    </div>
+    <div class='Mobile_3' id='menuKOMO_MOBILE'>
+        <div class='container containerFix'>
+            <div class='row wrapFlex'>
+                <a class='logoPart' href='/'>
+                    <img alt='logo' src='assets/image/logo-1024x421-1.png'>
+                </a>
+                <div class='searchArea'>
+                    <div class='searchItem'>
+                        <i aria-hidden='true' class='item item_1 fa fa-search'></i>
+                        <i aria-hidden='true' class='item item_2 fa fa-times' style='display: none;'></i>
+                    </div>
+                    <form action='/search' class='searchBlock search' method='GET'>
+                        <div class='form-group'>
+                            <input class='form-control' name='key' placeholder='Search' type='text'>
+                        </div>
+                        <button style='padding: 0;border: none;'>
+                            <i aria-hidden='true' class='iTagSearch fa fa-search'></i>
+                        </button>
+                    </form>
+                </div>
+                <div class='barsPart'>
+                    <div class='wrapIconBars'>
+                        <div class='line line_1'></div>
+                        <div class='line line_2'></div>
+                        <div class='line line_3'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='blockCateMobile'>
+            <div class='container'>
+                <div class='wrapCateParts'>
+                    <div class='catePart'>
+                        <a class='link1' href='/'>Trang chủ</a>
+                    </div>
+                    <div class='catePart'>
+                        <a class='link1' href='./gioi-thieu.html'>Giới thiệu</a>
+                    </div>
+                    <div class='catePart dropMore active'>
+                        <a class='link1' href='./cua-hang.html'>Sản phẩm</a>
+                        <div class='wrapITag'>
+                            <i aria-hidden='true' class='fa fa-angle-right faFix'></i>
+                            <i aria-hidden='true' class='fa fa-angle-down faFix'></i>
+                        </div>
+                        <ul class='blockLevel2'>
+                            <li>
+                                <a class='link2' href='./san-pham-keo-dan-gach.html'>Sản phẩm keo dán gạch</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./phu-gia-be-tong-va-vua.html'>Phụ gia bê tông và vữa</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./san-pham-sua-chua-va-vet-nut-be-tong.html'>Sản phẩm sửa chữa, vá vết
+                                    nứt bê tông</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./chong-tham-tang-ham-va-ho-thang-may.html'>Chống thấm tầng hầm và hố
+                                    thang máy</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi.html'>Sơn
+                                    Chống Thấm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='catePart'>
+                        <a class='link1' href='./du-an-tieu-bieu.html'>Dự án tiêu biểu</a>
+                    </div>
+                    <div class='catePart dropMore'>
+                        <a class='link1' href='./tin-tuc.html'>Truyền Thông</a>
+                    </div>
+                    <div class='catePart dropMore'>
+                        <a class='link1' href='#'>Chính sách</a>
+                        <div class='wrapITag'>
+                            <i aria-hidden='true' class='fa fa-angle-right faFix'></i>
+                            <i aria-hidden='true' class='fa fa-angle-down faFix'></i>
+                        </div>
+                        <ul class='blockLevel2'>
+                            <li>
+                                <a class='link2' href='./chinh-sach-bao-mat.html' title='Chính sách bảo mật'>Chính sách bảo
+                                    mật</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./van-chuyen-giao-nhan.html' title='Vận chuyển, giao nhận'>Vận chuyển,
+                                    giao nhận</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./thoi-gian-dat-hang.html' title='Thời gian đặt hàng'>Thời gian đặt
+                                    hàng</a>
+                            </li>
+                            <li>
+                                <a class='link2' href='./chinh-sach-thanh-toan.html' title='Chính sách thanh toán'>Chính sách
+                                    thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='catePart'>
+                        <a class='link1' href='./lien-he.html'>Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='Mobile_3' id='menuEndPage'>
+        <div class='wrapWidth'>
+            <div class='row'>
+                <div class='cartPart smallPart'>
+                    <a class='cartBlock_2 aTag' href='/cart/' title='giỏ hàng'>
+                        <div class='cartItem'>
+                            <img alt='cart' class='cartPartImg' src='assets/image/cartItem.svg'>
+                            <i class='amountProduct cart-count cart-amount d-none' data-count='0'>0</i>
+                        </div>
+                    </a>
+                    <p class='textUnderItem'>Giỏ hàng</p>
+                </div>
+                <div class='messFacePart smallPart'>
+                    <a class='contactCallPopUp aTag' contactText='Chat Facebook' data-target='#popup_registration_1'
+                        data-toggle='modal' dataHref='https://m.me/102696995895839' idGoogleGet='btn_messenger_id'
+                        rel='nofollow' title='Liên hệ'>
+                        <img alt='messengerItem' class='messFacePartImg' src='./assets/image/messenger_item.svg'>
+                    </a>
+                    <p class='textUnderItem'>Chat Face</p>
+                </div>
+                <div class='phonePart centerPart'>
+                    <a class='contactCallPopUp' contactText='Gọi điện' data-target='#popup_registration_1'
+                        data-toggle='modal' data='phone' dataHref='tel:0355520138' idGoogleGet='btn_phone_id'
+                        title='Liên hệ'>
+                        <img alt='phoneItem' class='phonePartImg' src='./assets/image/phone_item.svg'>
+                    </a>
+                </div>
+                <div class='zaloPart smallPart'>
+                    <a class='contactCallPopUp aTag' contactText='Chat Zalo' data-target='#popup_registration_1'
+                        data-toggle='modal' dataHref='https://zalo.me/0355520138' idGoogleGet='btn_zalo_id'
+                        rel='nofollow' title='Liên hệ'>
+                        <img alt='Zalo' class='zaloPartImg' src='./assets/image/zalo_item.png'>
+                    </a>
+                    <p class='textUnderItem'>Zalo</p>
+                </div>
+                <div class='youtubePart smallPart'>
+                    <a class='contactCallPopUp aTag' contactText='Tới Youtube' data-target='#popup_registration_1'
+                        data-toggle='modal' dataHref='https://www.youtube.com/channel/UC3yf78cxy0CvOi7--MiHTwA'
+                        idGoogleGet='btn_youtube_id' rel='nofollow' title='Liên hệ'>
+                        <img alt='youtube' class='youtubePartImg' src='./assets/image/youtubeItem.png'>
+                    </a>
+                    <p class='textUnderItem'>Youtube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden='true' class='modal fade popupAskContact' id='popup_registration_1' role='dialog' tabindex='-1'>
+        <div class='modal-dialog modal-dialog-centered' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <p class='modal-title'>KẾT NỐI</p>
+                    <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+                        <span aria-hidden='true'>×</span>
+                    </button>
+                </div>
+                <div class='modal-body'>
+                    Bạn có muốn kết nối với tư vấn viên KOMO?
+                </div>
+                <div class='modal-footer'>
+                    <a class='btnType_2' data-dismiss='modal'>Hủy</a>
+                    <a class='btnType_2 btnContact' href='' rel='nofollow' target='_blank'></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id='policyKOMO'>
+        <div class='breadcrumbsBlock'>
+            <div class='container'>
+                <nav aria-label='breadcrumb'>
+                    <ol class='breadcrumb breadcrumbFix'>
+                        <li class='breadcrumb-item'>
+                            <a href='/'>Trang chủ</a>
+                        <li aria-current='page' class='breadcrumb-item active'>Giới thiệu</li>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class='secMainContent'>
+            <div class='container'>
+                <div class='titleBlock_1'>
+                    <p class='titleText_1'>GIỚI THIỆU</p>
+                </div>
+                <div class='wrapContent bgSole_2'>
+                    <div class='data_contents'>
+
+
+                        <h2 id="ve-chung-toi">VỀ CHÚNG TÔI</h2>
+
+                        <p><strong>CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI COLORADO</strong></p>
+
+                        <p>Nhà phân phối sơn chống thấm VITEC chính hãng</p>
+
+                        <h3 id="gioi-thieu">GIỚI THIỆU:</h3>
+
+                        <p>Trong xu hướng đất nước đang phát triển, yêu cầu về chất lượng cơ sở hạ tầng ngày càng khắt
+                            khe. Chính vì vậy mà các sản phẩm vật liệu xây dựng đòi hỏi về các tiêu chuẩn rất cao. <a
+                                href="https://chongthamvitec.vn/gioi-thieu-colorado-chemical/" rel="noopener"
+                                target="_blank"><strong>Colorado</strong></a> được thành lập nhằm thỏa mãn nhu cầu ngày
+                            càng cao về chất lượng của các sản phẩm, nguyên liệu xây dựng.</p>
+
+                        <h3 id="thong-tin-ve-doanh-nghiep">THÔNG TIN VỀ DOANH NGHIỆP</h3>
+
+                        <ul>
+                            <li>
+                                <strong>Tên công ty:</strong> Công ty TNHH Thương mại Colorado.
+                            </li>
+                            <li>
+                                <strong>Mã số thuế:</strong> 0108378164
+                            </li>
+                            <li>
+                                <strong>Địa chỉ:</strong> Cụm 3, xã Hiệp Thuận, huyện Phúc Thọ, TP. Hà Nội, Việt Nam
+                            </li>
+                            <li>
+                                <strong>Kho:</strong> CCN thị trấn Phùng, Huyện Đan Phượng, TP. Hà Nội, Việt Nam.
+                            </li>
+                        </ul>
+
+                        <h3 id="thong-tin-lien-he">THÔNG TIN LIÊN HỆ</h3>
+
+                        <ul>
+                            <li>Tel: 0355520138</li>
+                            <li>Email: coloradochemical2019@gmail.com</li>
+                            <li>Địa chỉ: Cụm 3, xã Hiệp Thuận, huyện Phúc Thọ, TP. Hà Nội, Việt Nam</li>
+                            <li>Kho: CCN thị trấn Phùng, Huyện Đan Phượng, TP. Hà Nội, Việt Nam.</li>
+                        </ul>
+
+                        <h3 id="san-pham-dich-vu-cung-cap">SẢN PHẨM, DỊCH VỤ CUNG CẤP</h3>
+
+                        <p><strong>Colorado Chemical</strong> chuyên cung cấp nguyên liệu phụ trợ cho sản xuất vật liệu
+                            xây dựng:</p>
+
+                        <ul>
+                            <li>Acid phosphoric:</li>
+                            <li>Acid Phosphoric 85% food grade</li>
+                        </ul>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='container-fluid' id='footerSona'>
+        <div class='footerLine4Col'>
+            <div class='bgCoverOver'></div>
+            <div class='container'>
+                <div class='logoBlock'>
+                    <img alt='logo' src='assets/image/logo-1024x421-1.png'>
+                </div>
+                <div class='mainBlock row'>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>THÔNG TIN LIÊN HỆ</p>
+                        <p class='text1'>Công ty TNHH Thương Mại Colorado</p>
+                        <p class='text2'>
+                            <i class='iTag'>Địa chỉ:</i>
+                            Cụm 3, xã Hiệp Thuận, huyện Phúc Thọ, TP. Hà Nội, Việt Nam
+                        </p>
+                        <p class='text2'>
+                            <i class='iTag'>Kho:</i>
+                            CCN thị trấn Phùng, Huyện Đan Phượng, TP. Hà Nội, Việt Nam.
+                        </p>
+                        <!-- %p.text2 -->
+                        <!-- %i.iTag Điện thoại: -->
+                        <!-- 024.629 09968 - 024.668 02750 -->
+                        <p class='text2'>
+                            <i class='iTag'>Hotline:</i>
+                            <a class='contactCallPopUp' contactText='Gọi điện' data-target='#popup_registration_1'
+                                data-toggle='modal' data='phone' dataHref='tel:0355520138' idGoogleGet='btn_phone_id'
+                                title='Liên hệ'>0355520138</a>
+                        </p>
+                        <p class='text2'>
+                            <i class='iTag'>Email:</i>
+                            <a href='mailto:coloradochemical2019@gmail.com'>coloradochemical2019@gmail.com</a>
+                        </p>
+                        <div class='shareSocialPart'>
+                            <div class='shareSocial1'>
+                                <ul>
+                                    <li>
+                                        <a href='https://www.facebook.com/phanphoisonchongthamvitec/' rel='nofollow'
+                                            target='_blank' title='page'>
+                                            <img alt='itemFacebook' src='assets/image/itemFacebook2.svg'>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='' rel='nofollow' target='_blank' title='tiktok'>
+                                            <img alt='tiktok' src='assets/image/tiktok_2.png'>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='' rel='nofollow' target='_blank' title='instagram'>
+                                            <img alt='instagram' src='assets/image/instagramItem2.svg'>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='https://www.youtube.com/channel/UC3yf78cxy0CvOi7--MiHTwA'
+                                            rel='nofollow' target='_blank' title='youtube'>
+                                            <img alt='youtube' src='assets/image/youtube_2.svg'>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>DANH MỤC SẢN PHẨM</p>
+                        <ul class='ulTag1'>
+                            <li>
+                                <a href='/san-pham-keo-dan-gach/'>Sản phẩm keo dán gạch</a>
+                            </li>
+                            <li>
+                                <a href='/phu-gia-be-tong-va-vua/'>Phụ gia bê tông và vữa</a>
+                            </li>
+                            <li>
+                                <a href='/san-pham-sua-chua-va-vet-nut-be-tong/'>Sản phẩm sửa chữa, vá vết nứt bê
+                                    tông</a>
+                            </li>
+                            <li>
+                                <a href='/chong-tham-tang-ham-va-ho-thang-may/'>Chống thấm tầng hầm và hố thang máy</a>
+                            </li>
+                            <li>
+                                <a href='/chong-tham-san-mai-wc-ban-cong-bon-hoa-be-nuoc-ho-boi/'>Sơn chống thấm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>CHÍNH SÁCH</p>
+                        <ul class='ulTag1'>
+                            <li>
+                                <a href='/chinh-sach-bao-mat/' title='Chính sách bảo mật'>Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href='/van-chuyen-giao-nhan/' title='Vận chuyển, giao nhận'>Vận chuyển, giao nhận</a>
+                            </li>
+                            <li>
+                                <a href='/thoi-gian-dat-hang/' title='Thời gian đặt hàng'>Thời gian đặt hàng</a>
+                            </li>
+                            <li>
+                                <a href='/chinh-sach-thanh-toan/' title='Chính sách thanh toán'>Chính sách thanh
+                                    toán</a>
+                            </li>
+                            <li>
+                                <a href='/lien-he/'>Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='col-lg-3 col-md-6 col-12 colFix'>
+                        <p class='titleText'>KẾT NỐI VỚI COLORADO</p>
+                        <div class='fanpageArea'>
+                            <a href='https://www.facebook.com/phanphoisonchongthamvitec/' rel='nofollow' target='_blank'
+                                title='page'>
+                                <img alt='fanpage' src='assets/image/komo.png'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footerLineEnd'>
+            <div class='container'>
+                <div class='pTagEnd'>
+                    © 2024 chongthamvitec.vn. All Rights Reserved. Design Web and Seo by
+                    <a class='aTagLink' href='https://fagoagency.vn/' rel='nofollow' target='_blank'>FAGO AGENCY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
