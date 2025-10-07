@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chống thấm</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4./assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/png" href="./assets/image/logo-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container-fluid" id="detailProductSona">
+        <div class="breadcrumbsBlock">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumbFix">
+                        <li class="breadcrumb-item">
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb-item" id="breadcrumb-category">
+                            <!-- Danh mục sẽ được JS cập nhật -->
+                        </li>
+                        <li aria-current="page" class="breadcrumb-item active" id="breadcrumb-name">
+                            <!-- Tên sản phẩm sẽ được JS cập nhật -->
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="secQuickSummaryProduct">
+            <div class="container">
+                <div class="row m-0">
+                    <div class="leftImgProduct">
+                        <div class="mediaMulti">
+                            <div class="bigMediaShow">
+                                <div class="mediaPart figure2" namemedia="image_url" style="display: block;">
+                                    <img id="product-image" alt="" loading="lazy" src="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightTextProduct">
+                        <h1 class="nameProduct" id="product-name"></h1>
+                        <table class="table1">
+                            <tbody>
+                                <tr class="line line1">
+                                    <td class="tdLeft">
+                                        <a href="tel:0355520138" id="product-price"></a>
+                                    </td>
+                                </tr>
+                                <tr class="line line2">
+                                    <td class="tdLeft">Mã sản phẩm:</td>
+                                    <td class="tdRight" id="product-id"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="rightul data_contents">
+                            <div class="product-short-description" id="product-desc">
+                                <!-- Mô tả sẽ được JS cập nhật -->
+                            </div>
+                        </div>
+                        <div class="wrapEnterNumb data_payment">
+                            <a class="btnFix btn contactCallPopUp" contacttext="Gọi điện"
+                                data-target="#popup_registration_1" data-toggle="modal" data="phone"
+                                datahref="tel:0355520138" idgoogleget="btn_phone_id" title="Liên hệ">
+                                <i style="color: white;" class="fa-solid fa-phone"></i>
+                                0355520138
+                            </a>
+                            <a class="btnFix btn contactCallPopUp" contacttext="Chat Zalo"
+                                data-target="#popup_registration_1" data-toggle="modal"
+                                datahref="https://zalo.me/0355520138" idgoogleget="btn_zalo_id" rel="nofollow"
+                                title="Liên hệ">Chat Zalo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+	<script src="assets/js/header.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <script src="assets/js/products.js"></script>
+    <script>
+        // Lấy id từ URL
+        function getProductIdFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        // Tìm sản phẩm theo id
+        function findProductById(id) {
+            // Danh sách tất cả các mảng sản phẩm
+            const allProductArrays = [
+                typeof productsKeoDanGach !== "undefined" ? productsKeoDanGach : [],
+                typeof productsPhuGiaBeTongVaVua !== "undefined" ? productsPhuGiaBeTongVaVua : [],
+                typeof productsSuaChuaVaVaVetNutBeTong !== "undefined" ? productsSuaChuaVaVaVetNutBeTong : [],
+                typeof productsChongThamTangHamVaHoThangMay !== "undefined" ? productsChongThamTangHamVaHoThangMay : [],
+                typeof productsChongThamSanMaiWcBanCongBonHoaBeNuocHoBoi !== "undefined" ? productsChongThamSanMaiWcBanCongBonHoaBeNuocHoBoi : [],
+                typeof products !== "undefined" ? products : []
+            ];
+            for (const arr of allProductArrays) {
+                const found = arr.find(p => p.id === id);
+                if (found) return found;
+            }
+            return null;
+        }
+
+        // Render thông tin sản phẩm
+        function renderProductDetail(product) {
+            if (!product) {
+                document.getElementById('detailProductSona').innerHTML = '<div class="container"><h2>Không tìm thấy sản phẩm!</h2></div>';
+                return;
+            }
+            // Ảnh
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-image').alt = product.name;
+            // Tên
+            document.getElementById('product-name').textContent = product.name;
+            // Giá
+            document.getElementById('product-price').textContent = product.price;
+            // ID
+            document.getElementById('product-id').textContent = product.id;
+            // Breadcrumb
+            document.getElementById('breadcrumb-name').textContent = product.name;
+            document.getElementById('breadcrumb-category').innerHTML =
+                `<a href="#">${product.category || 'Danh mục'}</a>`;
+            // Mô tả
+            let descHtml = '';
+            if (product.des1) descHtml += `<p style="text-align:justify;"><strong>${product.name}</strong> ${product.des1}</p>`;
+            if (product.des2) descHtml += `<p style="text-align:justify;"><strong>Ứng dụng:</strong> ${product.des2}</p>`;
+            if (product.des3) descHtml += `<p style="text-align:justify;">Ứng dụng điển hình: ${product.des3}</p>`;
+            document.getElementById('product-desc').innerHTML = descHtml;
+        }
+
+        // Khởi động
+        document.addEventListener('DOMContentLoaded', function () {
+            const id = getProductIdFromUrl();
+            const product = findProductById(id);
+            renderProductDetail(product);
+        });
+    </script>
+</body>
+
+</html>
